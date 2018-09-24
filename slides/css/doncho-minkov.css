@@ -1,0 +1,193 @@
+.title-slide .title {
+    display: flex;
+    align-items: center;
+}
+
+.reveal .title-slide h1 {
+    font-size: 2.5em
+}
+
+.title-slide .signature {}
+
+.author {
+    display: flex;
+}
+
+.author .image {
+    height: 200px;
+}
+
+.author .image img {
+    border: 0;
+    border-radius: 5px;
+}
+
+.author .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.author .title-name,
+.author .company {
+    font-size: 0.7em
+}
+
+.signature .date {
+    font-size: 0.7em;
+    text-align: right
+}
+
+.reveal .demo-slide h1,
+.reveal .demo-slide h2 {
+    text-align: center;
+}
+
+.reveal .demo-slide h2 {
+    font-size: 1.2em;
+}
+
+.reveal strong {
+    color: #bd2438
+}
+
+.reveal h1 {
+    color: #bd2438;
+    font-size: 2em
+}
+
+.reveal h2 {
+    font-size: 1.7em;
+}
+
+.reveal .slides * {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.reveal .slides code {
+    font-family: 'Consolas' !important;
+}
+
+.reveal .slides section {
+    height: 900px;
+}
+
+.reveal .slides section.title-slide,
+.reveal .slides section.demo-slide {
+    height: auto;
+}
+
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal pre code {
+    padding: 25px 25px;
+}
+
+.reveal .controls .controls-arrow:before, .reveal .controls .controls-arrow:after {
+    background-color: #bd2438
+}
+
+.reveal .who-am-i ul li {
+    margin-top: 5px;
+}
+
+.reveal ul li {
+    margin-top: 15px;
+}
+
+.slide-columns {
+    display: flex;
+}
+
+.columns-3 .column-1 {
+    width: 33.3%;
+}
+
+.columns-3 .column-2 {
+    width: 66.6%;
+}
+
+.compare .line {
+    display: flex;
+}
+
+.compare .line>* {
+    width: 50%;
+    padding-top: 35px;
+}
+
+.compare .line>*:nth-child(1) {
+    text-align: right;
+    padding-right: 30px;
+    border-right: 3px solid #bd2438;
+}
+
+.compare .line>*:nth-child(2) {
+    text-align: left;
+    padding-left: 30px;
+    border-left: 3px solid #bd2438;
+}
+
+
+.compare .line>.title:nth-child(1) {
+    text-align: right;
+    padding-right: 33px;
+    border-right: 0;
+}
+
+.compare .line>.title:nth-child(2) {
+    text-align: left;
+    padding-left: 33px;
+    border-left: 0
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.icon:hover:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 70px;
+    display: block;
+    border-radius: 3px;
+}
+
+.icon.leetcode {
+    background-image: url(imgs/leetcode.png)
+}
+
+.icon.github {
+    background-image: url(imgs/github.svg)
+}
+
+.icon.hackerrank {
+    background-image: url(imgs/hackerrank.png)
+}
+
+.icon.email {
+    background-image: url(imgs/email.svg)
+}
+
+.icon.linkedin {
+    background-image: url(imgs/linkedin.svg)
+}
+
+.icon.www {
+    background-image: url(imgs/www.jpeg)
+}
