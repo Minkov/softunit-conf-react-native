@@ -55,13 +55,13 @@
             <li>
                 Experience with mobile development
                 <ul>
-                    <li>Android, iOS, Windows, React Native, NativeScript, Xamarin, Apache Cordova, Ionic, PhoneGap</li>
+                    <li>Android, iOS, Windows, React Native, NativeScript, Xamarin, Apache Cordova, Ionic</li>
                 </ul>
             </li>
             <li>
                 Loves JavaScript: AngularJS, Angular, React, Node.js, etc..
             </li>
-            <li>Also Fluent in Android, .NET, Java, C++, Python</li>
+            <li>Also fluent in .NET, Java, C++, Python</li>
             <li>Deep knowledge of Data Structures and Algorithms</li>
         </ul>
     </div>
@@ -96,17 +96,76 @@
 <!-- slide -->
 # Table of contents
 
-<ul>
-    <li class="fragment fade-in">
-        What is React and React Native?
-    </li>
-    <li class="fragment fade-in">
-        Components in React Native
-    </li>
-    <li class="fragment fade-in">
-        
-    </li>
-</ul>
+- What is React and React Native?
+- Components in React Native
+
+<!-- slide {class="demo-slide"} -->
+# React & React Native
+
+<!-- slide -->
+# React
+
+- React is a JavaScript framework for building **web applications**
+- React is the **View** of MVC
+- Use JSX to declare components
+	- Something like custom HTML tags
+	- 
+
+<pre><code>class TodosApp extends Component {
+	state = { todos: [] };
+
+	render() {
+		const { todos } = this.state;
+
+		return (
+			<ul class="list list-todos">
+				{
+					todos.map(todo => <Todo {...todo} />)
+				}
+			</ul>
+		)
+	}
+}</code></pre>
+
+<!-- slide -->
+
+# React Native
+- React is a JavaScript framework for building **mobile applications**
+	- Applications are native for Android and iOS
+	- Build mobile applications with shared code base
+		-	Code once, run everywhere
+- Use React and JavaScript know-how for building mobile apps
+	- No need to learn Java/Kotlin or Swift/Obj-C
+
+```jsx
+// Insert TODO list for React Native here
+```
+
+
+<!-- slide -->
+
+<div class="compare">
+	<div class="line header">
+		<strong>React</strong>
+		<strong>React Native</strong>
+	</div>
+	<div class="line">
+		<div>For the **web**</div>
+		<div>For **iOS** and **Android**</div>
+	</div>
+	<div class="line">
+		<div>Runs in the browser</div>
+		<div>Runs on a device</div>
+	</div>
+	<div class="line">
+		<div>Uses **common HTML tags**</div>
+		<div>Uses **React Native XML elements**</div>
+	</div>
+	<div class="line">
+		<div>Uses **browser APIs**</div>
+		<div>Uses **device APIs**</div>
+	</div>
+</div>
 
 <!-- slide {class="title-slide"} -->
 <div class="title">
