@@ -108,10 +108,9 @@
 - React is a JavaScript framework for building **web applications**
 - React is the **View** of MVC
 - Use JSX to declare components
-	- Something like custom HTML tags
-	- 
+    - Something like custom HTML tags
 
-<pre><code>class TodosApp extends Component {
+<pre><code data-no-escape>class TodosApp extends Component {
 	state = { todos: [] };
 
 	render() {
