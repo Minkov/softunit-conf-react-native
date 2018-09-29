@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 import Tabs from 'react-native-tabs';
 
 import TodoForm from './components/todo-form';
@@ -91,7 +90,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     justifyContent: 'flex-start',
     alignSelf: 'stretch',
-    
     padding: 51,
   },
 });

@@ -110,12 +110,44 @@
     display: flex;
 }
 
+.columns-2 .column-1 {
+    width: 50%;
+}
+
+.columns-2>*:nth-child(1) {
+    text-align: right;
+    padding-right: 30px;
+    border-right: 3px solid #bd2438;
+}
+
+.columns-2>*:nth-child(2) {
+    text-align: left;
+    padding-left: 30px;
+    border-left: 3px solid #bd2438;
+}
+
 .columns-3 .column-1 {
     width: 33.3%;
 }
 
 .columns-3 .column-2 {
     width: 66.6%;
+}
+
+.pros {
+    list-style-type: none !important;
+    text-align: right !important
+}
+
+.cons {
+    margin: 0 !important;
+    padding:0 !important;
+    list-style-type: none !important;
+    text-align: left !important
+}
+
+.cons li {
+    padding:0 !important;
 }
 
 .compare .line {

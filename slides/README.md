@@ -96,75 +96,89 @@
 <!-- slide -->
 # Table of contents
 
-- What is React and React Native?
-- Components in React Native
-
-<!-- slide {class="demo-slide"} -->
-# React & React Native
+- What is React Native?
+- Why to use React Native
 
 <!-- slide -->
-# React
 
-- React is a JavaScript framework for building **web applications**
-- React is the **View** of MVC
-- Use JSX to declare components
-    - Something like custom HTML tags
-
-<pre><code data-no-escape>class TodosApp extends Component {
-	state = { todos: [] };
-
+# React Native
+<ul>
+	<li class="fragment fade-in">
+		React is a JavaScript framework for building **mobile applications**
+		<ul>
+			<li class="fragment fade-in">
+				Applications are native for Android and iOS
+			</li>
+			<li class="fragment fade-in">
+				Build mobile applications with shared code base
+				<ul>
+					<li class="fragment fade-in">
+						Code once, run everywhere
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="fragment fade-in">
+		Use React and JavaScript know-how for building mobile apps
+		<ul>
+			<li class="fragment fade-in">
+				No need to learn Java/Kotlin or Swift/Obj-C
+			</li>
+		</ul>
+	</li>
+</ul>
+<pre class="fragment fade-in"><code>class TodosApp extends React.Component {
 	render() {
 		const { todos } = this.state;
-
 		return (
-			<ul class="list list-todos">
-				{
-					todos.map(todo => <Todo {...todo} />)
-				}
-			</ul>
-		)
+			&lt;TodoList todos={todos} />
+		);
 	}
 }</code></pre>
 
 <!-- slide -->
 
-# React Native
-- React is a JavaScript framework for building **mobile applications**
-	- Applications are native for Android and iOS
-	- Build mobile applications with shared code base
-		-	Code once, run everywhere
-- Use React and JavaScript know-how for building mobile apps
-	- No need to learn Java/Kotlin or Swift/Obj-C
-
-```jsx
-// Insert TODO list for React Native here
-```
-
-
-<!-- slide -->
-
-<div class="compare">
-	<div class="line header">
-		<strong>React</strong>
-		<strong>React Native</strong>
+<h1 style="text-align: center">React Native</h1>
+<div class="slide-columns columns-2">
+	<div class="column-1">
+		<strong>Pros</strong>
+		<ul class="pros">
+			<li>
+				Shared code base
+			</li>
+			<li>
+				Common know-how
+			</li>
+			<li>
+				Platform-specific per platform
+			</li>
+			<li>
+				Any NPM lib can be used
+			</li>
+			<li>
+				JS has the biggest community
+			</li>
+		</ul>
 	</div>
-	<div class="line">
-		<div>For the **web**</div>
-		<div>For **iOS** and **Android**</div>
-	</div>
-	<div class="line">
-		<div>Runs in the browser</div>
-		<div>Runs on a device</div>
-	</div>
-	<div class="line">
-		<div>Uses **common HTML tags**</div>
-		<div>Uses **React Native XML elements**</div>
-	</div>
-	<div class="line">
-		<div>Uses **browser APIs**</div>
-		<div>Uses **device APIs**</div>
+	<div class="column-1">
+		<strong>Cons</strong>
+		<ul class="cons">
+			<li>
+				You have to learn JavaScript
+			</li>
+			<li>
+				JS apps can be too complicated
+			</li>
+			<li>
+				Custom stuff still explicitly done
+			</li>
+		</ul>
 	</div>
 </div>
+
+<!-- slide {class="demo-slide"} -->
+# Demo
 
 <!-- slide {class="title-slide"} -->
 <div class="title">
