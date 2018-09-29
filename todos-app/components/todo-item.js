@@ -6,10 +6,10 @@ import CheckBox from 'react-native-check-box'
 class TodoItem extends React.Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
+        this._handleClick = this._handleClick.bind(this);
     }
 
-    handleClick() {
+    _handleClick() {
         const { id, onTodoStateChange } = this.props;
         onTodoStateChange(id);
     }
@@ -17,15 +17,13 @@ class TodoItem extends React.Component {
     render() {
         const { text, isDone } = this.props;
         return (
-            <View>
+            <View style={{paddingTop: 10}}>
                 <CheckBox
-                    onClick={this.handleClick}
-                    style={{ flex: 1, padding: 10 }}
-                    leftText={text}
+                    onClick={this._handleClick}
+                    rightText={text}
                     isChecked={isDone}
                 />
             </View>
-
         );
     }
 }

@@ -1,19 +1,18 @@
 import React from 'react';
 import {
     FlatList,
+    StyleSheet,
 } from 'react-native';
 
 import TodoItem from './todo-item';
+
+const extractKey = todo => todo.id.toString();
 
 class TodosList extends React.Component {
     constructor(props) {
         super(props);
 
-        this._extractKey = this._extractKey.bind(this);
         this._renderItem = this._renderItem.bind(this);
-    }
-    _extractKey(todo) {
-        return todo.id.toString();
     }
 
     _renderItem({ item }) {
@@ -21,18 +20,20 @@ class TodosList extends React.Component {
 
         return (
             <TodoItem {...item} onTodoStateChange={onTodoStateChange} />
-        )
+        );
     }
 
     render() {
         const { todos } = this.props;
+        console.log(todos);
 
         return (
-            <FlatList data={todos}
-                keyExtractor={this._extractKey}
+            <FlatList
+                data={todos}
+                keyExtractor={extractKey}
                 renderItem={this._renderItem}
             />
-        )
+        );
     }
 }
 
